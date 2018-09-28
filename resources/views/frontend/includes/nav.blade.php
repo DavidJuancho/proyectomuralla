@@ -7,16 +7,20 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="">{{ app_name() }}</a>
+				<a class="navbar-brand" href="{{ url('/') }}">Hotel La gran Muralla</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li>{!! link_to('/', trans('navs.home')) !!}</li>
-					<li>{!! link_to('macros', trans('navs.macros')) !!}</li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
+
+					<li><a href="{{ route('tipo.create') }}">Agregar Tipo</a></li>
+					<li><a href="{{ route('habitacion.create') }}">Agregar Habitacion</a></li>
+					<li><a href="{{ route('reservaciones') }}">Reservar</a></li>
+
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ trans('menus.language-picker.language') }} <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">

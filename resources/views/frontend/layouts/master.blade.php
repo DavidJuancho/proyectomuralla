@@ -44,5 +44,6 @@
         @yield('after-scripts-end')
 
         @include('includes.partials.ga')
+        @yield('my-js')
     </body>
 </html>

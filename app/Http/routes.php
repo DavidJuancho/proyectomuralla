@@ -35,3 +35,53 @@ $router->group(['namespace' => 'Backend'], function () use ($router)
 		});
 	});
 });
+
+Route::get('tipo/create', [
+	'uses'=>'TipoController@create',
+	'as'=>'tipo.create'
+]);
+Route::post('tipo', [
+	'uses'=>'TipoController@store',
+	'as'=>'tipo.store'
+]);
+
+Route::get('habitacion/create', [
+	'uses'=>'HabitacioneController@create',
+	'as'=>'habitacion.create'
+]);
+Route::post('habitacion', [
+	'uses'=>'HabitacioneController@store',
+	'as'=>'habitacion.store'
+]);
+
+Route::get('reservaciones', [
+	'uses'=>'ReservaController@reservaciones',
+	'as'=>'reservaciones'
+]);
+Route::post('reservar_cliente',[
+	'uses'=>'ReservaController@buscar_cliente',
+	'as'=>'reservar_cliente'
+]);
+Route::post('Clientes',[
+	'uses'=>'ClienteController@store',
+	'as'=>'clientes'
+]);
+//Selecionar Tipo
+Route::post('seleccionar_Tipo',[
+	'uses'=>'ReservaController@seleccionar_tipo',
+	'as'=>'seleccionar.tipo'
+]);
+//Registrar la reserva
+Route::post('guarda_reserva',[
+	'uses'=>'ReservaController@store',
+	'as'=>'guarda_reserva'
+]);
+
+Route::get('reservas/index',[
+	'uses' => 'ReservaController@index',
+	'as' => 'reservas.index'
+]);
+/*
+//para retornar las habitaciones
+Route::get('habitaciones/{id}','TipoController@getHabitaciones');
+*/
