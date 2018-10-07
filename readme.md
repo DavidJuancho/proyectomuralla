@@ -1,5 +1,6 @@
 ## Laravel 5.* Boilerplate (Currently 5.1.23) [Screenshots](http://imgur.com/a/uEKuq)
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/dfdda7c0db4848cfa02ebbb63eee98c2)](https://app.codacy.com/app/DavidJuancho/proyectomuralla?utm_source=github.com&utm_medium=referral&utm_content=DavidJuancho/proyectomuralla&utm_campaign=Badge_Grade_Dashboard)
 [![Project Status](http://stillmaintained.com/rappasoft/Laravel-5-Boilerplate.png)](http://stillmaintained.com/rappasoft/Laravel-5-Boilerplate) [![Latest Stable Version](https://poser.pugx.org/rappasoft/laravel-5-boilerplate/v/stable)](https://packagist.org/packages/rappasoft/laravel-5-boilerplate) [![Latest Unstable Version](https://poser.pugx.org/rappasoft/laravel-5-boilerplate/v/unstable)](https://packagist.org/packages/rappasoft/laravel-5-boilerplate)
 
 ### Introduction
